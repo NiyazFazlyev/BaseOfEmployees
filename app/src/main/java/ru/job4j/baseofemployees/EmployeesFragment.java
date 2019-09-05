@@ -63,9 +63,9 @@ public class EmployeesFragment extends Fragment {
         @Override
         public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int i) {
             final Employee employee = this.employees.get(i);
-            TextView firstName = holder.itemView.findViewById(R.id.first_name);
+            TextView firstName = holder.itemView.findViewById(R.id.firstName);
             firstName.setText(employee.getFirstName());
-            TextView secondName = holder.itemView.findViewById(R.id.second_name);
+            TextView secondName = holder.itemView.findViewById(R.id.secondName);
             secondName.setText(employee.getSecondName());
             firstName.setOnClickListener(new View.OnClickListener() {
                 @Override
